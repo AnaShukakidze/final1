@@ -1,0 +1,17 @@
+/* 480 - 320 */
+@media(max-width: 321px){
+    /* header */
+    header{
+        padding-inline: 8px;
+    }
+
+    /* section 1 */
+    .section1 {
+        height: 320px;
+    }
+
+    /* section 2 */
+    .section2 {
+        padding: 32px 0 20px;
+    }
+}

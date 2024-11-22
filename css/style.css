@@ -1,0 +1,324 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pridi:wght@200;300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* container */
+.container {
+    width: min(100%, 1440px);
+    margin: auto;
+    padding-top: 101px;
+}
+
+/* header */
+header {
+    padding: 16px 94px;
+    background-color: #012426;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #05BCCA;
+    position: fixed;
+    max-width: inherit;
+    width: inherit;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* burger */
+.fa-bars {
+    font-size: 26px;
+    color: #05BCCA;
+    display: none;
+}
+
+.fa-circle-xmark {
+    font-size: 23px;
+    color: #05BCCA;
+    display: none;
+}
+
+/* header nav */
+.headerUl {
+    display: flex;
+    column-gap: 72px;
+}
+
+.headerLink {
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #A1C3C9;
+    position: relative;
+}
+
+.headerLink::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    border-radius: 3px;
+    background: #A1C3C9;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s linear;
+}
+
+.headerLink:hover::after {
+    width: 100%;
+}
+
+.headerLink:active {
+    color: #05BCCA;
+}
+
+.headerLink:active::after {
+    background-color: #05BCCA;
+}
+
+/* header buttons */
+.headerButtonContainer {
+    display: flex;
+    column-gap: 32px;
+}
+
+.headerButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid #05BCCA;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.headerMiddleButton {
+    border: none;
+    background-color: #05BCCA;
+}
+
+.headerButtonIcon {
+    font-size: 14px;
+    color: #05BCCA;
+}
+
+.headerMiddleButtonIcon {
+    color: #2C4246;
+}
+
+.fa-cart-shopping {
+    font-size: 20px;
+}
+
+.headerButton:hover {
+    background-color: #05BCCA;
+    box-shadow: 0px 0px 8px 4px #05BCCACC;
+}
+
+.headerMiddleButton:hover {
+    background-color: transparent;
+    border: 2px solid #05BCCA;
+}
+
+.headerButton:hover .headerButtonIcon {
+    color: #2C4246;
+}
+
+.headerMiddleButton:hover .headerMiddleButtonIcon {
+    color: #05BCCA;
+}
+
+.headerButton:active {
+    background-color: #046269;
+}
+
+/* section 1 */
+.section1 {
+    height: 560px;
+    padding-top: 72px;
+    background-image: url("../images/section1cover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section1container {
+    height: 36px;
+    display: inline-flex;
+    column-gap: 24px;
+    align-items: center;
+}
+
+.section1title {
+    font-family: "Inter", serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.section1span {
+    color: #05BCCA;
+}
+
+.section1button {
+    width: 36px;
+    height: 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: #C46A2B;
+    cursor: pointer;
+    position: relative;
+}
+
+.fa-arrow-right {
+    font-size: 17px;
+    color: #D9D9D9;
+}
+
+.section1button::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    border-radius: 2px;
+    background: #D9D9D9;
+    display: block;
+    position: absolute;
+    left: 3px;
+    bottom: 3px;
+    transition: .2s linear;
+}
+
+.section1button:hover::after {
+    width: 30px;
+}
+
+.section1button:active {
+    background-color: #6f3c18;
+}
+
+/* section 2 */
+.section2 {
+    background-color: #1A1A1A;
+    padding: 96px 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #05BCCA;
+}
+
+.section2line {
+    width: 187.27px;
+    height: 2px;
+    border-color: #05BCCA;
+    margin: 8px 0 64px 0;
+}
+
+/* section 2 card */
+.section2cardContainer {
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+}
+
+.section2card {
+    width: 298px;
+    padding: 8px;
+    background-color: #2C4246;
+    border: 1px solid #05BCCA;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    transition: .3s linear;
+}
+
+.section2card:hover {
+    box-shadow: 0px 0px 8px 4px #05BCCACC;
+}
+
+.section2cardImageContainer {
+    height: 221px;
+    overflow: hidden;
+}
+
+.section2cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s linear;
+}
+
+.section2card:hover .section2cardImage {
+    transform: scale(1.3);
+}
+
+.section2cardTitle {
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #D9D9D9;
+    margin-bottom: 16px;
+}
+
+.section2cardButtonContainer {
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2cardPrice {
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #05BCCA;
+}
+
+.section2cardButton {
+    width: 58px;
+    height: 28px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    background-color: #C46A2B;
+
+    font-family: "Inter", serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.section2cardButton::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    border-radius: 2px;
+    background: #FFFFFF;
+    display: block;
+    position: absolute;
+    left: 4px;
+    bottom: 3px;
+    transition: .2s linear;
+}
+
+.section2cardButton:hover::after {
+    width: 50px;
+}
+
+.section2cardButton:active {
+    background-color: #6f3c18;
+}
