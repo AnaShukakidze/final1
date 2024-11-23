@@ -1,15 +1,16 @@
 /* 1439 - 769 */
-@media(max-width: 1181px){
+@media(max-width: 1181px) {
+
     /* header */
-    header{
+    header {
         padding-inline: 32px;
     }
 
-    .fa-bars{
+    .fa-bars {
         display: block;
     }
 
-    .headerNav{
+    .headerNav {
         width: 200px;
         height: 144px;
         padding: 16px 0 16px 16px;
@@ -20,36 +21,49 @@
         transition: .5s linear;
     }
 
-    .headerUl{
+    .headerUl {
         flex-direction: column;
         row-gap: 8px;
     }
 
     /* section 2 */
-    .section2{
+    .section2 {
         padding-inline: 20px 0;
     }
 
-    .section2cardContainer{
+    .section2cardContainer {
         padding: 12px;
         /* paddings tu ar vuwer shadow ichreba zevit-qvevit da pirveli cardis marjvena mxares */
         overflow-x: scroll;
     }
 
-    .section2line{
+    .section2line {
         margin-bottom: 52px;
     }
-    
-    .section2card{
+
+    .section2card {
         flex: 1 0 272px;
         padding: 0;
     }
 
-    .section2cardTextContainer{
+    .section2cardTextContainer {
         padding: 8px;
     }
 
-    .section2cardButtonContainer{
+    .section2cardButtonContainer {
         padding-bottom: 8px;
+    }
+
+    /* catalog page */
+    .catalogSection {
+        padding-inline: 32px;
+    }
+
+    .catalogCard{
+        width: 48%;
+    }
+
+    .catalogCard:nth-last-child(-n+3){
+        display: none;
     }
 }

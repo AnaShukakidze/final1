@@ -68,14 +68,19 @@ header {
 
 .headerLink:hover::after {
     width: 100%;
+    background: #05BCCA;
 }
 
-.headerLink:active {
+.headerLink:hover {
     color: #05BCCA;
 }
 
+.headerLink:active {
+    color: #046269;
+}
+
 .headerLink:active::after {
-    background-color: #05BCCA;
+    background-color: #046269;
 }
 
 /* header buttons */
@@ -107,7 +112,7 @@ header {
     color: #2C4246;
 }
 
-.fa-cart-shopping {
+.headerButtonCart {
     font-size: 20px;
 }
 
@@ -133,6 +138,7 @@ header {
     background-color: #046269;
 }
 
+/* home page */
 /* section 1 */
 .section1 {
     height: 560px;
@@ -321,4 +327,291 @@ header {
 
 .section2cardButton:active {
     background-color: #6f3c18;
+}
+
+/* footer */
+footer {
+    padding: 48px 0;
+    background-color: #2C4246;
+    display: flex;
+    justify-content: center;
+    column-gap: 157px;
+}
+
+.footerSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerTitle {
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #D9D9D9;
+}
+
+.footerLine {
+    width: 80px;
+    height: 2px;
+    border-color: #D9D9D9;
+    margin: 0 0 24px;
+}
+
+.footerUl {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.footerNavLink {
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #D9D9D9;
+}
+
+.footerNavLink:hover {
+    color: #05BCCA;
+}
+
+.footerNavLink:active {
+    color: #046269;
+}
+
+.footerSocialLinksContainer {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 8px;
+}
+
+.footerSocialLinkLogo {
+    transition: .2s linear;
+}
+
+.footerSocialLinkLogo:hover {
+    filter: drop-shadow(0 0 7px #D9D9D9);
+}
+
+/* catalog page */
+.catalogSection {
+    padding: 96px 94px;
+    background-color: #012426;
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+}
+
+.catalogTopSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterbox,
+.sortByForm {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.filterboxSpan,
+.sortByForm label {
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #D9D9D9;
+}
+
+.sortByForm {
+    column-gap: 32px;
+}
+
+#sortBy {
+    width: 160px;
+    height: 32px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #A1C3C9;
+
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #2C4246;
+
+    appearance: none;
+    background-image: url("../images/catalogSortArrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    cursor: pointer;
+}
+
+#sortBy:focus {
+    outline: none;
+}
+
+/* catalog cards section */
+.catalogCardsSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* boloshi cota adgili rcheboda sanam dapataravdeboda da space between magito davuwere:) */
+    gap: 40px 20px;
+}
+
+.catalogCard {
+    width: 32%;
+    background-color: #2C4246;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s linear;
+}
+
+.catalogCardImageContainer {
+    width: 100%;
+    height: 298px;
+    overflow: hidden;
+}
+
+.catalogCardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s linear;
+}
+
+.catalogCard:hover {
+    box-shadow:
+        0 0 15px #05BCCA,
+        0 0 30px #05BCCA,
+        0 0 60px #05BCCA;
+}
+
+.catalogCard:hover .catalogCardImage {
+    transform: scale(1.3);
+    filter: grayscale(100%);
+}
+
+.catalogCardTextSection {
+    padding: 16px 8px;
+}
+
+.catalogCardTitle,
+.CatalogCardPrice {
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #D9D9D9;
+    margin-bottom: 16px;
+}
+
+.catalogCardTextSectionBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CatalogCardPrice {
+    font-weight: 400;
+    color: #05BCCA;
+    margin: 0;
+}
+
+.CatalogCardAddToCartButton {
+    width: 27px;
+    height: 27px;
+    border: none;
+    border-radius: 4px;
+    background-color: #C46A2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.addToCartButtonIcon {
+    font-size: 19px;
+    color: #FFFFFF;
+    transition: .2s linear;
+}
+
+.CatalogCardAddToCartButton:hover .addToCartButtonIcon {
+    color: #4a6f76;
+}
+
+.CatalogCardAddToCartButton:active {
+    background-color: #6f3c18;
+}
+
+.catalogBottomSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 48px;
+}
+
+.catalogBottomButton {
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #C46A2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.catalogButtonSpan,
+.catalogBottomSpan {
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #D9D9D9;
+}
+
+.catalogButtonRight {
+    background-color: #05BCCA;
+}
+
+.catalogBottomSpan {
+    color: #FFFFFF;
+}
+
+.catalogBottomButton::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #D9D9D9;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    transition: .2s linear;
+}
+
+.catalogButtonRight::after {
+    left: 0;
+}
+
+.catalogBottomButton:hover::after {
+    width: 100%;
+}
+
+.catalogButtonLeft:active {
+    background-color: #6f3c18;
+}
+
+.catalogButtonRight:active {
+    background-color: #046269;
 }
