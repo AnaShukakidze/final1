@@ -543,8 +543,12 @@ footer {
     transition: .2s linear;
 }
 
-.CatalogCardAddToCartButton:hover .addToCartButtonIcon {
-    color: #4a6f76;
+.CatalogCardAddToCartButton:hover{
+    background-color: #e6823a;
+    box-shadow:
+        0 0 10px #C46A2B,
+        0 0 20px #C46A2B,
+        0 0 30px #C46A2B;
 }
 
 .CatalogCardAddToCartButton:active {
