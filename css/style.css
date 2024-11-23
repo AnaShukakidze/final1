@@ -458,8 +458,7 @@ footer {
 .catalogCardsSection {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /* boloshi cota adgili rcheboda sanam dapataravdeboda da space between magito davuwere:) */
+    justify-content: center;
     gap: 40px 20px;
 }
 
@@ -615,3 +614,203 @@ footer {
 .catalogButtonRight:active {
     background-color: #046269;
 }
+
+/* contact us page */
+.contactSection {
+    padding: 140px 0;
+    background-image: url("../images/contactCover.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contactSectionBox {
+    width: 1038px;
+    padding: 32px;
+    border-radius: 10px;
+    background-color: #2C4246CC;
+    border: 1px solid #05BCCA;
+    margin: auto;
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactBoxSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 64px;
+}
+
+/* form section */
+.contactBoxSection1 {
+    width: 440px;
+}
+
+.contactTitle {
+    font-family: "Inter", serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.contactForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+}
+
+.contactFormContainer {
+    display: flex;
+    column-gap: 60px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+
+    font-family: "Inter", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+::placeholder {
+    font-family: "Inter", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    height: 96px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    resize: none;
+
+    font-family: "Inter", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.ContactSendButton {
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    background-color: #C46A2B;
+    cursor: pointer;
+
+    outline: 1px solid #C46A2B;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.ContactSendButton:hover {
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+}
+
+.ContactSendButton:active {
+    background-color: #6f3c18;
+}
+
+/* map section */
+.contactBoxSection2 {
+    width: 494px;
+}
+
+.contactBoxSection2ButtonsContainer {
+    display: flex;
+    column-gap: 72px;
+}
+
+.contactButton {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border: 2px solid #FFFFFF;
+    background-color: #05BCCA;
+    cursor: pointer;
+}
+
+.contactButton i {
+    font-size: 20px;
+    color: #FFFFFF;
+    transition: .2s linear;
+}
+
+.contactButton:hover .fa-phone{
+    animation-name: phoneRinging;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.contactButton:hover .fa-envelope{
+    transform: skew(-20deg);
+}
+
+.contactButton:hover .fa-location-dot{
+    animation:bounce .3s alternate ease infinite;
+}
+
+.contactButton:active {
+    background-color: #046269;
+}
+
+.contactButton i {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+iframe {
+    width: 100%;
+    height: 264px;
+    border-radius: 10px;
+}
+
+/* animations */
+@keyframes phoneRinging {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-5px); 
+    }
+  }

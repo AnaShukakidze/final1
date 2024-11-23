@@ -59,11 +59,20 @@
         padding-inline: 32px;
     }
 
-    .catalogCard{
+    .catalogCard {
         width: 48%;
     }
 
-    .catalogCard:nth-last-child(-n+3){
+    .catalogCard:nth-last-child(-n+3) {
         display: none;
+    }
+
+    /* contact us page */
+    .contactSection {
+        padding-inline: 32px;
+    }
+
+    .contactSectionBox{
+        width: 100%;
     }
 }

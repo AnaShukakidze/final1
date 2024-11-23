@@ -34,6 +34,30 @@
     .catalogCard:nth-last-child(-n+5){
         display: none;
     }
+
+    /* contact us page */
+    .contactSection {
+        padding: 64px 24px;
+    }
+
+    .contactSectionBox{
+        padding: 16px;
+        flex-direction: column;
+        row-gap: 48px;
+    }
+
+    .contactBoxSection{
+        width: 100%;
+        row-gap: 24px;
+    }
+
+    iframe{
+        height: 200px;
+    }
+
+    .contactBoxSection2ButtonsContainer{
+        column-gap: 42px;
+    }
 }
 
 @media(max-width: 481px) {
@@ -120,5 +144,11 @@
 
     .catalogButtonSpan{
         display: none;
+    }
+
+    /* contact us page */
+    .contactFormContainer{
+        flex-direction: column;
+        row-gap: 36px;
     }
 }
